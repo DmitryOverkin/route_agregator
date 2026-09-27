@@ -1,7 +1,13 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+
 </script>
 
 <template>
-  <HelloWorld />
+  <div class="work">working</div>
 </template>
+
+<style scoped lang="scss">
+div {
+  color: $primary-color;
+}
+</style>
