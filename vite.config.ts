@@ -12,7 +12,7 @@ export default defineConfig({
       scss: {
         quietDeps: true,
         loadPaths: [path.resolve(import.meta.dirname, 'src/styles')],
-        additionalData: `@use "variables" as *;`
+        additionalData: `@use "index" as *;`
       }
     }
   }
