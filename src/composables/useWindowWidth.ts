@@ -1,6 +1,6 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 
-export default function useWindowWidthMobile() {
+export default function useWindowWidth() {
     const windowWidth = ref(window.innerWidth)
 
     const update = () => { windowWidth.value = window.innerWidth }

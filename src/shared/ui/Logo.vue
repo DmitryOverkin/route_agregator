@@ -23,6 +23,8 @@
 .logo {
     @include flex-center;
     gap: $space-12;
+    user-select: none;
+    cursor: pointer;
     &__icon {
         @include flex-center;
         width: 40px;
@@ -31,6 +33,7 @@
         max-height: 40px;
         background-color: $accent-soft;
         border-radius: $radius-12;
+        border: 1px solid $accent;
     }
     
     &__icon {
