@@ -1,17 +1,19 @@
 <script setup lang="ts">
+import Icon from '@/shared/ui/Icon.vue';
+
     const props = defineProps({
         isMobile: {
             type: Boolean,
             required: true
-        }
+        },
     })
+
+    
 </script>
 
 <template>
     <div class="logo">
-        <div class="logo__icon">
-            <img src="../../assets/logo.png" alt="Логотип сайта человек на велосипеде">
-        </div>
+        <Icon :iconVariant="'logo'"/>
         <div class="logo__text">
             <div class="logo__text-title"><strong>ВелоДень</strong></div>
             <p v-if="!isMobile" class="logo__text-description">городские велопрогулки</p>
@@ -25,22 +27,6 @@
     gap: $space-12;
     user-select: none;
     cursor: pointer;
-    &__icon {
-        @include flex-center;
-        width: 40px;
-        height: 40px;
-        max-width: 40px;
-        max-height: 40px;
-        background-color: $accent-soft;
-        border-radius: $radius-12;
-        border: 1px solid $accent;
-    }
-    
-    &__icon {
-        img {
-            object-fit: cover;  
-    }
-}
 
     &__text {
         &-title {

@@ -11,10 +11,8 @@ export default defineConfig({
       '@': path.resolve(import.meta.dirname, 'src'),
     }
   },
-
   css: {
     preprocessorOptions: {
-
       scss: {
         quietDeps: true,
         loadPaths: [path.resolve(import.meta.dirname, 'src/styles')],

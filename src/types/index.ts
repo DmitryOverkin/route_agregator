@@ -1,6 +1,10 @@
-export const ButtonType = {
-    Primary: 'primary',
-    Delete: 'delete',
-} as const;
+type TButton = {
+    variant: "primary" | "danger" | "reset" | "options" | "goto",
+    disabled: boolean
+}
 
-export type ButtonType = (typeof ButtonType)[keyof typeof ButtonType];
+type TIcon = {
+    variant: "logo" | "error" | "delete" | "edit" | "add" | "db" | "unsave",
+}
+
+export type { TButton, TIcon }

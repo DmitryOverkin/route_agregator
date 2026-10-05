@@ -1,10 +1,9 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 import useWindowWidth from '../composables/useWindowWidth.ts';
-import Logo from '../shared/ui/Logo.vue';
+import Logo from './Logo.vue';
 import Button from '../shared/ui/Button.vue';
 
-import { ButtonType } from '../types/index.ts';
 
 const { windowWidth } = useWindowWidth();
 
@@ -14,8 +13,8 @@ const isMobile = computed<boolean>(() => windowWidth.value < 768)
 
 <template>
     <header class="header">
-        <Logo :isMobile="isMobile"/>
-        <Button :type="ButtonType.Primary">
+        <Logo :logoVariant="'logo'" :isMobile="isMobile"/>
+        <Button :variant="'primary'" :disabled="false" :isMobile="isMobile">
             Добавить маршрут
         </Button>
     </header>
