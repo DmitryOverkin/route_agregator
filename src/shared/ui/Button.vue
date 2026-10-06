@@ -6,6 +6,8 @@ import primaryButtonBlackImg from '@/assets/button/button-plus-black.png';
 import primaryButtonDisabledImg from '@/assets/button/button-plus-disabled.png';
 import primaryButtonGreenImg from '@/assets/button/button-plus-green.png';
 import gotoButtonArrow from '@/assets/button/button-arrow-down.png';
+import editButtonImg from '@/assets/button/button-edit.png';
+import deleteButtonCartImg from '@/assets/button/button-delete-cart.png';
 
 
 
@@ -23,6 +25,10 @@ const buttonStyle = computed(() => {
             return 'primary';
         case 'goto': 
             return 'goto'
+        case 'edit':
+            return 'edit'
+        case 'delete':
+            return 'delete'
         default:
             return '';
     }
@@ -36,6 +42,10 @@ const buttonImg = computed(() => {
             return primaryButtonBlackImg;
         case 'goto':
             return gotoButtonArrow
+        case 'edit':
+            return editButtonImg
+        case 'delete':
+            return deleteButtonCartImg
         default:
             return '';
     }
@@ -112,6 +122,24 @@ const buttonImg = computed(() => {
         color: $text-secondary;
         width: 100%;
         max-width: 194px;
+      }
+
+      .edit{
+        border: none;
+        background-color: transparent;
+        color: $text-secondary;
+        width: 100%;
+      }
+
+      .delete{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        border: 1px solid $border;
+        background-color: $interactive;
+        padding: 10px;
+        gap: 0;
       }
 
     

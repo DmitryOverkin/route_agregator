@@ -113,9 +113,7 @@ const props = defineProps({
                 height: 100%;
                 max-width: 215px;
                 max-height: 34px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                @include flex-center;
                 margin-left: 24px;
                 margin-bottom: 24px;
                 margin-top: auto;

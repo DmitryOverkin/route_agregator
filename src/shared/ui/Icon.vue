@@ -3,7 +3,7 @@
 import { computed } from 'vue';
 import type { TIcon } from '../../types/index.ts';
 
-import logoImg from '@/assets/icon/logo.png';
+import logoImg from '@/assets/icons/logo.png';
 
 
     const props = defineProps<{

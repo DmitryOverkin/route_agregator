@@ -1,5 +1,5 @@
 type TButton = {
-    variant: "primary" | "danger" | "reset" | "options" | "goto",
+    variant: "primary" | "danger" | "reset" | "options" | "goto" | "delete" | "edit",
     disabled: boolean
 }
 
